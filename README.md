@@ -1,18 +1,13 @@
-# ⚛ cv-card
+# 📄 cv-card
 
-Your resume online card
-
-## 🎮 Demo
-You can see how it performs live on:
-[https://mkaczkowski.com](https://www.mkaczkowski.com)
+Your interactive resume card is now online!
 
 ## 🔧 Installation
 
 Clone repository to your local workspace:
 ```bash
-git clone https://github.com/mkaczkowski/daftcode-react-starter.git
+git clone https://github.com/mkaczkowski/cv-card.git
 ```
-
 Install project dependencies using npm or yarn:
 
 ```bash
