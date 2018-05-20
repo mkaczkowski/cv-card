@@ -39,17 +39,21 @@ const ExperienceItemEditable = (props: ExperienceItemProps & DataContextProps) =
               />
               <Error field="company" touched={touched} errors={errors} />
             </Field>
-            <Field as={Group.Item} padding={8}>
-              <Label htmlFor="logo">Logo</Label>
-              <Input
-                id="logo"
-                name="logo"
-                placeholder="Company's logo url"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.logo}
-              />
-            </Field>
+            {
+              values.logo && (
+                <Field as={Group.Item} padding={8}>
+                  <Label htmlFor="logo">Logo</Label>
+                  <Input
+                    id="logo"
+                    name="logo"
+                    placeholder="Company's logo url"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.logo}
+                  />
+                </Field>
+              )
+            }
             <Field as={Group.Item} padding={8}>
               <Label htmlFor="period">Period *</Label>
               <Input
